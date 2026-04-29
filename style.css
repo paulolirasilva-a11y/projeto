@@ -1,0 +1,79 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing : 0;
+    }
+    
+    body{
+    background-color : rgb(19, 53, 206);
+    color: black;
+    display:flex;
+    justify-content : center;
+    align-items : center;
+    min-height: 100vh;
+    }
+    #app{
+    background : rgb(19, 166, 235);
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    height: 500px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgb(0, 0, 0);
+    
+    
+    }
+    main{
+    padding : 30px;
+    height : 100%;
+    display: flex;
+    flex-direction : column;
+    align-items : center;
+    text-align : center;
+    }
+    nav{
+    border-top : 2px solid rgb(196, 28, 120);
+    display : flex;
+    align-items : center;
+    padding : 10px;
+    justify-content: space-between;
+    }
+    #saída{
+    width: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    font-size: 35px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    button{
+    width: 80px;
+    height: 80px;
+    background: radial-gradient(circle, rgb(255, 46, 91), rgba(228, 14, 14, 0.603));
+    border: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: auto;
+    color: none;
+    transition: 0.3s;
+    }
+    button:hover{
+    scale:1.1;
+    box-shadow: 0 0 15px;
+    }
+    
+
+
+
+    @media (max-width:480px){
+    
+    #app{
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+    }
+    main{
+    padding: 20px;
+    }
+    
+    }
